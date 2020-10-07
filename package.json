@@ -9,9 +9,9 @@
   "scripts": {
     "prepare": "napa",
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export -o ./html",
     "start": "next start",
-    "export": "next export",
+    "export": "next build && next export -o ./html",
     "deploy": "next build && next export -o ./html"
   },
   "dependencies": {
